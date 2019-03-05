@@ -46,7 +46,7 @@ static const uint32_t matrixio_params[][3] = {
     {44100, 67, 7},  {48000, 61, 7},  {96000, 30, 10}};
 
 static struct snd_pcm_hardware matrixio_pcm_capture_hw = {
-    .info = SNDRV_PCM_INFO_INTERLEAVED | SNDRV_PCM_INFO_PAUSE,
+    .info = SNDRV_PCM_INFO_NONINTERLEAVED | SNDRV_PCM_INFO_PAUSE,
     .formats = SNDRV_PCM_FMTBIT_S16_LE,
     .rates = SNDRV_PCM_RATE_8000_96000,
     .rate_min = 8000,
